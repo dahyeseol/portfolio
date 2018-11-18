@@ -1,29 +1,24 @@
-import React, { Component } from 'react';
-import Thumbnail from './Thumbnail';
+import React, { Component } from 'react'
+import Thumbnail from './Thumbnail'
 import projects from '../../constants/projects'
 
 const { langnet, voiceOrderingApp, dibiup, morecoin, pingo } = projects
 
 class Contents extends Component {
   static defaultProps = {
-    projects: [
-      langnet,
-      voiceOrderingApp,
-      dibiup,
-      morecoin,
-      pingo
-    ]
+    projects: [langnet, voiceOrderingApp, dibiup, morecoin, pingo],
   }
-  
-  render() {
-    console.log('this.state', this.state)
-    return (
-        <ul className="prjList">
-          {this.props.projects.map(p => <Thumbnail title={p.title} path={p.path}/>)}
-        </ul>
-        )
 
+  render() {
+    const { projects } = this.props
+    return (
+      <ul className="prjList">
+        {projects.map(p => (
+          <Thumbnail key={p.id} title={p.title} path={p.path} />
+        ))}
+      </ul>
+    )
   }
 }
 
-export default Contents;
+export default Contents
