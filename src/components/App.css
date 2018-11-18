@@ -1,0 +1,185 @@
+p, a, ul, li, button, h1 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+body {
+  color: #272727;
+  font-family: 'Montserrat', 'san-serif';
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+}
+.header .logo {
+  float: left;
+}
+.header .nav {
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  list-style-type: none;
+  margin-right: 32px;
+}
+
+.header .nav a {
+  margin: 0px 32px;
+}
+.header .nav a:hover {
+  color: orange;
+}
+
+.wrapper {
+  max-width: 1080px;
+  margin: auto;
+}
+.contents {
+  width: 100%;
+  margin: auto;
+}
+.main {
+  width: 100%;
+  margin: 160px auto;
+}
+.main p {
+  width: 75%;
+  font-size: 40px;
+  line-height: 56px;
+  font-weight: 700;
+}
+.main p span {
+  padding: 0px 10px;
+}
+.main p span:hover{
+  background-color:#FAFFBD;
+}
+.body {
+  display: flex;
+}
+
+.filter {
+  display: flex;
+  margin-bottom: 40px;
+}
+.filter .btn {
+  padding: 12px 16px;
+  margin-right:16px;
+  font-weight: 800;
+  font-family: 'Montserrat', 'san-serif';
+  font-size: 18px;
+  line-height: 14px;
+  cursor: pointer;
+}
+
+.filter .GUI .btn {
+  background-color: #EAF1EE;
+  color: #41605A;
+}
+.filter .UX .btn {
+  background-color: #D0DEF1;
+  color: #536276;
+}
+.filter .Branding .btn {
+  background-color: #FAF7EF;
+  color: #736F6C;
+}
+.filter .Graphic .btn {
+  background-color: #F1F0F0;
+  color: #696969;
+}
+.filter .inactive {
+  box-sizing: border-box;
+  background-color: white;
+  padding: 9px 13px;
+  opacity: 0.6;
+  border: 3px solid;
+}
+.prjList a {
+  background-repeat: no-repeat;
+  display: block;
+  width: 100%;
+  height: 320px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+.prjList a:hover {
+  box-shadow: 2px 8px 30px 0 rgba(0, 0, 0, 0.08);
+}
+.prjList .LangNet {
+  background-color: #FAF7EF;
+  background-image: url('../img/langnet.png');
+  background-size: 420px 332px;
+  background-position: 12% -10px;
+}
+.prjList .LangNet p {
+  margin-left: 727px;
+}
+.prjList .Voice {
+  background-color: #EEF2F5;
+  background-image: url('../img/voiceO.png');
+  background-size: 1249px 703px;
+  background-position: 200px -89px;
+}
+.prjList .Dibiup {
+  background-color: #F1F0F0;
+  background-image: url('../img/dibiup.png');
+  background-size: 594px 208px;
+  background-position: 12% 112px;  
+}
+.prjList .Morecoin {
+  background-color: #EAF1EE;
+}
+.prjList .Pingo {
+  background-color: #EEF2F5;
+  background-image: url('../img/pingo.png');
+  background-size: 50%;
+  background-position: 80% -10px;
+  margin-bottom: 120px;
+  position: relative;
+}
+.prjList .Pingo p {
+  top: 100px;
+  left: 80%;
+}
+.pingoPage .header {
+  background-color:  #EEF2F5;
+}
+.pingoPage .topBox {
+  height: 700px;
+  background-color: #EEF2F5;
+  width:100%;
+  color: #536276;
+}
+.pingoPage .contents {
+  color: #536276;
+  width: 80%;
+  line-height: 1.5em;
+}
+.pingoPage p {
+  font-family: lato regular;
+  font-size: 18px;
+}
+.pingoPage img {
+  width: 100%;
+}
+.topBox {
+  position: relative;
+  overflow: hidden;
+}
+.topBox .textBox {
+  top: 200px;
+}
+.topBox .textBox h1 {
+  font-size: 36px;
+  margin-bottom: 32px;
+}
+.topBox .textBox p {
+  font-size: 16px;
+}
